@@ -1,0 +1,22 @@
+coming soon...
+<!--<img src="~/app/assets/images/humble_casa_logo.jpg" alt="HumbleCasa.com logo" align: center>
+-->
+<center>
+  <br><br>
+<%= image_tag("humble_casa_logo.jpg", alt: "HumbleCasa.com logo", size: "480x180") %>
+<br><br><br><br><br><br><br>
+
+would you like to be emailed when we have news?
+<br><br>
+<div class="row">
+  <div class="span6 offset3">
+
+  <%= form_for @contact do |f| %>
+
+    <%= f.label :name, "name" %><%= f.text_field :name %>
+    <%= f.label :email, "email" %><%= f.text_field :email %>
+    <%= f.submit "sign up", class: "btn btn-small btn-primary" %>
+  <% end %>
+</div>
+
+</center>
